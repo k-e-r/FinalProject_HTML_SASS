@@ -1,0 +1,30 @@
+:root {
+  --red: #ff151f;
+  --dred: #bb1b1f;
+  --xgrey: #11191e;
+  --dgrey: #2c353b;
+  --mgrey: #434d54;
+  --lgrey: #e7edf1;
+  --size-xxl: 200px;
+  --size-xl: 150px;
+  --size-l: 100px;
+  --size-m: 50px;
+  --size-s: 25px;
+  --size-xs: 12.5px;
+  --size-xxs: 6px;
+  --sshadow: 1px 1px 1px rgba(44, 53, 59, 0.5);
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  color: var(--dgrey);
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
