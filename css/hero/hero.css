@@ -175,7 +175,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 580px;
+  height: 600px;
   width: 100vw;
   min-width: 1050px;
   z-index: -1;
@@ -185,7 +185,7 @@
 
 @media (min-width: 768px) {
   .hero-bg-image {
-    height: 750px;
+    height: 850px;
   }
 }
 
