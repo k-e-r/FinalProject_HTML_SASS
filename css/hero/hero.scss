@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  width: 100%;
   @media (min-width: 1050px) {
     display: flex;
     justify-content: left;
@@ -33,6 +34,7 @@
     margin: 0.5em auto;
     @media (min-width: 768px) {
       width: 600px;
+      height: 100px;
     }
   }
   & h4 {
@@ -74,6 +76,7 @@
 }
 
 .hero-link {
+  height: 30px;
   background-color: #ff151f;
   color: #fff;
   display: flex;
@@ -94,6 +97,7 @@
     }
   }
   @media (min-width: 768px) {
+    height: 75px;
     margin: 10px;
     width: 270px;
     border-radius: 50px;
@@ -112,7 +116,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 560px;
+  height: 580px;
   width: 100vw;
   min-width: 1050px;
   z-index: -1;
@@ -126,5 +130,15 @@
   font-size: 24px;
   @media (min-width: 768px) {
     font-size: 36px;
+  }
+}
+
+.hero-plane-icon {
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+  transition: all 0.5s;
+  &:hover {
+    transform: translateX(10px) rotate(90deg);
   }
 }
