@@ -1,0 +1,48 @@
+.btn {
+  display: inline-block;
+  padding: var(--size-xs) var(--size-s);
+  font-weight: 700;
+  color: #fff;
+  background: var(--red);
+  text-align: center;
+  border: 0;
+  border-radius: var(--size-m);
+  text-decoration: none !important;
+  transition: all 0.5s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--dred);
+  padding-right: var(--size-xs);
+}
+
+.btn-big {
+  padding: var(--size-s) var(--size-m);
+  font-size: 1.5em;
+  box-shadow: var(--sshadow);
+}
+
+.btn-big:hover,
+.btn-big:focus {
+  padding-right: calc(var(--size-m) - var(--size-xs));
+}
+
+.btn-white {
+  background: #fff;
+  color: var(--red);
+}
+
+.btn-white:hover,
+.btn-white:focus {
+  background: var(--lgrey);
+}
+
+.btn i {
+  margin-left: var(--size-xs);
+  transition: all 0.5s ease;
+}
+.btn:hover i,
+.btn:focus i {
+  margin-left: var(--size-s);
+}
