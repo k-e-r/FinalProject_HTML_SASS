@@ -1,10 +1,16 @@
+header img {
+  width: 24px;
+  height: 24px;
+}
+
 .site-header-inner {
   position: relative;
   background-color: #fff;
 }
 
 .container {
-  margin: 0 2em;
+  width: 95%;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,6 +31,7 @@
 
 .site-logo {
   width: 170px;
+  height: 50%;
   margin-right: 1.5em;
 }
 
@@ -127,6 +134,17 @@
   }
 }
 
+@media (min-width: 1150px) {
+  .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .travel-button {
   display: none;
   background-color: #ff151f;
@@ -136,6 +154,7 @@
   border-radius: 25px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  height: 25px;
   cursor: pointer;
 }
 
@@ -156,6 +175,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -168,21 +190,22 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0;
   }
 }
 
 .plane-icon {
-  width: 18px;
-  height: 18px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(90deg) translateX(-10px);
+          transform: rotate(90deg) translateX(-10px);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .plane-icon:hover {
-  -webkit-transform: translateX(10px) rotate(90deg);
-          transform: translateX(10px) rotate(90deg);
+  -webkit-transform: rotate(90deg) translate(-10px, -10px);
+          transform: rotate(90deg) translate(-10px, -10px);
 }
 
 .hide {
@@ -250,6 +273,7 @@
   margin: 1.5em 0;
   text-align: center;
   cursor: pointer;
+  list-style: none;
 }
 
 .search-bar {
