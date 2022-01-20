@@ -1,4 +1,6 @@
-.btn {
+.btn,
+._submit,
+input[type='submit'] {
   display: inline-block;
   padding: var(--size-xs) var(--size-s);
   font-weight: 700;
@@ -12,7 +14,9 @@
 }
 
 .btn:hover,
-.btn:focus {
+.btn:focus,
+._submit:hover,
+._submit:focus {
   background: var(--dred);
   padding-right: var(--size-xs);
 }
@@ -36,6 +40,15 @@
 .btn-white:hover,
 .btn-white:focus {
   background: var(--lgrey);
+}
+
+.btn-dark {
+  background: var(--dgrey);
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+  background: var(--mgrey);
 }
 
 .btn i {

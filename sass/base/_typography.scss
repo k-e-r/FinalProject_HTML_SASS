@@ -17,7 +17,7 @@ h6 {
 h1 {
   font-size: 5.625em;
   @media screen and (max-width: 625px) {
-    font-size: 3.55em;
+    font-size: 3.5em;
   }
 }
 h2 {
@@ -74,4 +74,83 @@ ul + * {
 
 p {
   font-size: 1.125em;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.entry-content ul,
+.entry-content ol {
+  font-size: 1.125em;
+}
+.list {
+  li {
+    position: relative;
+    padding-left: 1.25em;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: 'Font Awesome 5 Pro';
+      font-weight: 400;
+      content: '\f105';
+      color: var(--red);
+    }
+
+    + li,
+    ul {
+      margin-top: 0.5em;
+    }
+    ul {
+      font-size: 1em;
+    }
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.text-white {
+  color: #fff;
+}
+.text-red {
+  color: var(--red);
+}
+.text-xgrey {
+  color: var(--xgrey);
+}
+.text-dgrey {
+  color: var(--dgrey);
+}
+.text-mgrey {
+  color: var(--mgrey);
+}
+.text-lgrey {
+  color: var(--lgrey);
+}
+
+.text-small {
+  font-size: 0.75em;
+}
+
+.uc {
+  text-transform: uppercase;
+}
+.ofh {
+  overflow: hidden;
 }
