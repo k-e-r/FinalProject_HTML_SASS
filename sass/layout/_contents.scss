@@ -150,6 +150,8 @@
   &-img {
     margin-top: calc(var(--size-m) * -1);
     height: calc(100% + var(--size-m));
+    background: url(../images/images1.jpg) no-repeat center center;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -178,8 +180,6 @@
     padding-bottom: 35%;
     margin: 0;
     box-shadow: none;
-    background: url(../../images/images1.jpg) no-repeat center center;
-    background-size: cover;
   }
 
   .home-about {
