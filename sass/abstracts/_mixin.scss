@@ -1,0 +1,9 @@
+@mixin back-img($path) {
+  background: url($path) no-repeat center center;
+  background-size: cover;
+}
+
+@mixin grid($repeatNum, $sizeNum, $rowNum) {
+  grid-template-columns: repeat($repeatNum, $sizeNum);
+  grid-template-rows: $rowNum;
+}

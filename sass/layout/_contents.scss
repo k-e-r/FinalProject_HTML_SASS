@@ -1,3 +1,5 @@
+@use '../abstracts' as a;
+
 ////////////////////////////
 // main start
 .announcement {
@@ -25,8 +27,7 @@
 
 .hero {
   position: relative;
-  background: url('../images/bg1.jpg') no-repeat center center;
-  background-size: cover;
+  @include a.back-img('../images/bg1.jpg');
   color: #fff;
   &::before {
     position: absolute;
@@ -150,8 +151,7 @@
   &-img {
     margin-top: calc(var(--size-m) * -1);
     height: calc(100% + var(--size-m));
-    background: url(../images/images1.jpg) no-repeat center center;
-    background-size: cover;
+    @include a.back-img('../images/images1.jpg');
   }
 }
 @media screen and (max-width: 1150px) {
@@ -203,28 +203,21 @@
 
 ////////////////////////////
 // Group Tours start
-@mixin back-img($path) {
-  background: url($path) no-repeat center center;
-  background-size: cover;
-}
+
 .img1 {
-  @include back-img('../images/images1.jpg');
+  @include a.back-img('../images/images1.jpg');
 }
 .img2 {
-  @include back-img('../images/images2.jpg');
+  @include a.back-img('../images/images2.jpg');
 }
 .img3 {
-  @include back-img('../images/images3.jpg');
+  @include a.back-img('../images/images3.jpg');
 }
 .img4 {
-  @include back-img('../images/images4.jpg');
+  @include a.back-img('../images/images4.jpg');
 }
 .img5 {
-  @include back-img('../images/images5.jpg');
-}
-@mixin grid($repeatNum, $sizeNum, $rowNum) {
-  grid-template-columns: repeat($repeatNum, $sizeNum);
-  grid-template-rows: $rowNum;
+  @include a.back-img('../images/images5.jpg');
 }
 
 .drop-outline {
@@ -256,7 +249,7 @@
 
 .group-tours .grid {
   display: grid;
-  @include grid(6, 1fr, repeat(2, 1fr));
+  @include a.grid(6, 1fr, repeat(2, 1fr));
   gap: var(--size-m);
 }
 
@@ -342,7 +335,7 @@
 
 @media screen and (max-width: 768px) {
   .group-tours .grid {
-    @include grid(2, 1fr, auto);
+    @include a.grid(2, 1fr, auto);
   }
 
   .grid .group-tour,
@@ -358,7 +351,7 @@
 
 @media screen and (max-width: 625px) {
   .group-tours .grid {
-    @include grid(1, 1fr, auto);
+    @include a.grid(1, 1fr, auto);
   }
 }
 // Group Tours end
@@ -367,8 +360,7 @@
 // Destinations start
 .destinations .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  @include a.grid(5, 1fr, repeat(2, 1fr));
   gap: var(--size-m);
 }
 
@@ -381,48 +373,39 @@
   }
 
   &:nth-child(1) &-inner {
-    background: url('../images/africa-2.jpg') no-repeat center center;
-    background-size: cover;
+    @include a.back-img('../images/africa-2.jpg');
   }
 
   &:nth-child(2) &-inner {
-    background: url('../images/bg1.jpg') no-repeat center center;
-    background-size: cover;
+    @include a.back-img('../images/bg1.jpg');
   }
 
   &:nth-child(3) &-inner {
-    background: url('../images/belize-1.jpg') no-repeat center center;
-    background-size: cover;
+    @include a.back-img('../images/belize-1.jpg');
   }
 
   &:nth-child(4) &-inner {
-    background: url('../images/baltic-russia-1.jpg') no-repeat center center;
-    background-size: cover;
+    @include a.back-img('../images/baltic-russia-1.jpg');
   }
 
   &:nth-child(5) &-inner {
-    background: url('../images/img-europe.jpg') no-repeat center center;
-    background-size: cover;
+    @include a.back-img('../images/img-europe.jpg');
   }
 
   &:nth-child(6) &-inner {
-    background: url('../images/middle-east-1.jpg') no-repeat center center;
-    background-size: cover;
+    @include a.back-img('../images/middle-east-1.jpg');
   }
 
   &:nth-child(7) &-inner {
-    background: url('../images/north-america-1.jpg') no-repeat center center;
-    background-size: cover;
+    @include a.back-img('../images/north-america-1.jpg');
   }
 
   &:nth-child(8) &-inner {
-    background: url('../images/south-america-1.jpg') no-repeat center center;
-    background-size: cover;
+    @include a.back-img('../images/south-america-1.jpg');
   }
 
   &:nth-child(9) &-inner {
-    background: url('../images/south-pacific-1.jpg') no-repeat center center;
-    background-size: cover;
+    @include a.back-img('../images/south-pacific-1.jpg');
   }
 
   &:nth-child(10) &-inner {
@@ -441,8 +424,7 @@
 }
 
 .footer-cta {
-  background: url('../images/bg-ready-1.jpg') no-repeat center center;
-  background-size: cover;
+  @include a.back-img('../images/bg-ready-1.jpg');
 }
 @media screen and (max-width: 1280px) {
   .footer-cta {
@@ -465,8 +447,7 @@
 
 @media screen and (max-width: 1150px) {
   .destinations .grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    @include a.grid(4, 1fr, repeat(2, 1fr));
   }
   .disp1 {
     display: none;
@@ -482,8 +463,7 @@
 
 @media screen and (max-width: 768px) {
   .destinations .grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    @include a.grid(3, 1fr, repeat(2, 1fr));
   }
   .disp2 {
     display: none;
@@ -492,15 +472,13 @@
 
 @media screen and (max-width: 625px) {
   .destinations .grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    @include a.grid(2, 1fr, repeat(3, 1fr));
   }
 }
 
 @media screen and (max-width: 625px) {
   .destinations .grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    @include a.grid(2, 1fr, repeat(2, 1fr));
   }
 
   .destination {
@@ -513,125 +491,3 @@
   }
 }
 // Destinations end
-
-////////////////////////////
-// footer start
-.site-footer {
-  ul,
-  p {
-    font-size: 1em;
-    line-height: 1.5;
-    margin: 0 !important;
-  }
-
-  p.social-icons {
-    margin-top: var(--size-s) !important;
-    font-size: 1.25em;
-  }
-
-  h5 {
-    font-size: 1.125em;
-    line-height: 1.5;
-    font-weight: 700;
-  }
-}
-
-.footer-logos,
-.footer-links {
-  flex-basis: 100%;
-}
-
-.footer-logos {
-  margin-bottom: var(--size-m);
-  padding-bottom: var(--size-m);
-  border-bottom: 1px solid var(--lgrey);
-  gap: var(--size-m);
-
-  a,
-  img {
-    display: block;
-  }
-
-  img {
-    max-height: 41px;
-  }
-}
-
-.footer-links {
-  & > div:not(:last-child) {
-    margin-right: var(--size-l);
-  }
-
-  a {
-    color: #fff;
-    transition: color 0.25s ease;
-
-    &:hover {
-      color: var(--red);
-    }
-  }
-}
-
-.footer-contact {
-  margin-left: auto;
-}
-
-.social-icons a {
-  margin-right: var(--size-xs);
-}
-
-.copyright {
-  background: var(--xgrey);
-  color: #fff;
-
-  p,
-  a {
-    margin: 0;
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 1220px) {
-  .footer-logos {
-    margin-bottom: 25px;
-  }
-
-  .footer-links > div {
-    flex-basis: 50%;
-    margin: 25px 0 0 !important;
-  }
-}
-
-@media screen and (max-width: 625px) {
-  .site-footer {
-    text-align: center;
-  }
-
-  .footer-links > div {
-    flex-basis: 100%;
-  }
-
-  .footer-logos {
-    justify-content: center;
-    padding-bottom: 25px;
-    margin-bottom: 0;
-    gap: 25px;
-    a {
-      flex-basis: 25%;
-    }
-    img {
-      margin: 0 auto;
-    }
-  }
-
-  .copyright .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .site .vc_column-inner {
-    padding: 12.5px !important;
-  }
-}
-
-// footer end
