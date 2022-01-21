@@ -1302,7 +1302,7 @@ input[type=submit] {
   transition: top 0.5s ease;
   z-index: 8;
 }
-.search-container .active {
+.search-container.active {
   top: 100%;
   transition: top 0.5s ease;
 }

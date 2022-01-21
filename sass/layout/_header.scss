@@ -125,7 +125,7 @@
   right: 0;
   transition: top 0.5s ease;
   z-index: 8;
-  .active {
+  &.active {
     top: 100%;
     transition: top 0.5s ease;
   }
