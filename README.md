@@ -9,6 +9,6 @@ Responsible part:</br>
 1. Hero & Header ... Sota
 2. Expo Dubai ... Guilherme 
 3. Group Tours ... Sohta
-4. (Quality service) & Travel Ideas ... Koushyar
+4. (Quality service) & Travel Ideas ... Kaori & Koushyar
 5. Destinations & (Ready To~) ... Kaori
 6. Footer ... Guilherme
