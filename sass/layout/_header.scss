@@ -13,8 +13,13 @@
   }
 }
 
-.site-branding a {
-  display: block;
+.site-branding {
+  img {
+    height: 80px;
+  }
+  a {
+    display: block;
+  }
 }
 
 .nav-container {
