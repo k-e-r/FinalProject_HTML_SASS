@@ -16,33 +16,18 @@ h6 {
 
 h1 {
   font-size: 5.625em;
-  @media screen and (max-width: 625px) {
-    font-size: 3.5em;
-  }
 }
 h2 {
   font-size: 3.75em;
-  @media screen and (max-width: 625px) {
-    font-size: 2.75em;
-  }
 }
 h3 {
   font-size: 3em;
-  @media screen and (max-width: 625px) {
-    font-size: 2em;
-  }
 }
 h4 {
   font-size: 2.25em;
-  @media screen and (max-width: 625px) {
-    font-size: 1.375em;
-  }
 }
 h5 {
   font-size: 1.5em;
-  @media screen and (max-width: 625px) {
-    font-size: 1.25em;
-  }
 }
 h6 {
   font-size: 0.875em;
@@ -153,4 +138,22 @@ ol {
 }
 .ofh {
   overflow: hidden;
+}
+
+@media screen and (max-width: 625px) {
+  h1 {
+    font-size: 3.5em;
+  }
+  h2 {
+    font-size: 2.75em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.375em;
+  }
+  h5 {
+    font-size: 1.25em;
+  }
 }

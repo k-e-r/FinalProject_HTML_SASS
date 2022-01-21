@@ -128,20 +128,6 @@ textarea {
   padding-right: var(--size-m);
 }
 
-.vc_row {
-  margin-left: 0;
-  margin-right: 0;
-
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.row-rev {
-  flex-direction: row-reverse;
-}
-
 .hide {
   display: none;
 }
@@ -163,17 +149,6 @@ textarea {
 }
 .bg-lgrey {
   background-color: var(--lgrey);
-}
-
-.site {
-  .wpb_button,
-  .wpb_content_element,
-  ul.wpb_thumbnails-fluid > li {
-    margin-bottom: 0;
-  }
-  .wpb_content_element + .wpb_content_element {
-    margin-top: 1.5rem;
-  }
 }
 
 .c-1800 {
@@ -263,37 +238,37 @@ textarea {
 
 .br-xxl,
 .br-xxl.drop::before,
-.br-xxl .vc_column-inner {
+.br-xxl {
   border-radius: var(--size-xxl);
 }
 .br-xl,
 .br-xl.drop::before,
-.br-xl .vc_column-inner {
+.br-xl {
   border-radius: var(--size-xl);
 }
 .br-l,
 .br-l.drop::before,
-.br-l .vc_column-inner {
+.br-l {
   border-radius: var(--size-l);
 }
 .br-m,
 .br-m.drop::before,
-.br-m .vc_column-inner {
+.br-m {
   border-radius: var(--size-m);
 }
 .br-s,
 .br-s.drop::before,
-.br-s .vc_column-inner {
+.br-s {
   border-radius: var(--size-s);
 }
 .br-xs,
 .br-xs.drop::before,
-.br-xs .vc_column-inner {
+.br-xs {
   border-radius: var(--size-xs);
 }
 .br-xxs,
 .br-xxs.drop::before,
-.br-xxs .vc_column-inner {
+.br-xxs {
   border-radius: var(--size-xxs);
 }
 
